@@ -57,7 +57,7 @@ function isString(/* value */) {
  *   concatenateStrings('', 'bb') => 'bb'
  */
 function concatenateStrings(value1, value2) {
-  return value1 + value2;
+  return value1.concat(value2);
 }
 
 /**
@@ -116,8 +116,8 @@ function removeLeadingWhitespaces(value) {
  *   removeTrailingWhitespaces('cat ') => 'cat'
  *   removeTrailingWhitespaces('\t\t\tHello, World! ') => '\t\t\tHello, World!'
  */
-function removeTrailingWhitespaces(value) {
-  return value.replace(/\s+$/, '');
+function removeTrailingWhitespaces(/* value */) {
+  throw new Error('Not implemented');
 }
 
 /**
